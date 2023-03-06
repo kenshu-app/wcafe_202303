@@ -8,72 +8,82 @@
         <meta name="description" content="2015年表参道駅のそばにオープンした閑静な住宅街に囲まれたオープンカフェ。スタイリッシュなカフェでほっと一息お寛ぎください。">
     </head>
     <body>
-        <h1>ウッディカフェ</h1>
-        <ul>
-            <li>
-                <a href="index.html">ホーム</a>
-            </li>
-            <li>
-                <a href="menu.html">メニュー</a>
-            </li>
-            <li>
-                <a href="info.html">店舗情報</a>
-            </li>
-            <li>
-                <a href="contact.html">お問い合わせ</a>
-            </li>
-        </ul>
-        <h2>お問い合わせ</h2>
-        <p>ウッディカフェに関するお問い合わせはこちらのフォームからお尋ねください。</p>
-        <form action="" method="post" novalidate>
-            <table>
-                <tr>
-                    <th>名前</th>
-                    <td><input type="text" name="name" size="24" placeholder="お名前を入力してください" autofocus required></td>
-                </tr>
-                <tr>
-                    <th>メール</th>
-                    <td><input type="email" size="36" placeholder="メールを入力してください" required></td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td>
-                        <select name="address">
-                            <option value="sai">埼玉</option>
-                            <option value="kan">神奈川</option>
-                            <option value="tok" selected>東京</option>
-                            <option value="chi">千葉</option>
-                            <option value="iba">茨城</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>知った理由</th>
-                    <td>
-                        <label><input type="checkbox" name="reason[]" value="search">検索</label>
-                        <label><input type="checkbox" name="reason[]" value="blog">紹介記事</label>
-                        <label><input type="checkbox" name="reason[]" value="sns">SNS口コミ</label>
-                        <label><input type="checkbox" name="reason[]" value="ad">ネット広告</label>
-                        <label><input type="checkbox" name="reason[]" value="other">その他</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th>お問い合わせ内容</th>
-                    <td>
-                        <label><input type="radio" name="subject" value="reserve" checked>予約に関して</label>
-                        <label><input type="radio" name="subject" value="menu">メニューに関して</label>
-                        <label><input type="radio" name="subject" value="recruit">求人に関して</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th>お問い合わせ</th>
-                    <td><textarea name="contact" id="" cols="36" rows="6"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="送信"></td>
-                </tr>
-            </table>
-        </form>
-        <p><small>Copyright &copy; 20XX WoodyCafe. All Rights Reserved.</small></p>
+        <header>
+            <h1>ウッディカフェ</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">メニュー</a>
+                    </li>
+                    <li>
+                        <a href="info.html">店舗情報</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>お問い合わせ</h2>
+                <p>ウッディカフェに関するお問い合わせはこちらのフォームからお尋ねください。</p>
+                <form action="" method="post" novalidate>
+                    <table>
+                        <tr>
+                            <th>名前</th>
+                            <td><input type="text" name="name" size="24" placeholder="お名前を入力してください" autofocus required></td>
+                        </tr>
+                        <tr>
+                            <th>メール</th>
+                            <td><input type="email" size="36" placeholder="メールを入力してください" required></td>
+                        </tr>
+                        <tr>
+                            <th>住所</th>
+                            <td>
+                                <select name="address">
+                                    <option value="sai">埼玉</option>
+                                    <option value="kan">神奈川</option>
+                                    <option value="tok" selected>東京</option>
+                                    <option value="chi">千葉</option>
+                                    <option value="iba">茨城</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>知った理由</th>
+                            <td>
+                                <label><input type="checkbox" name="reason[]" value="search">検索</label>
+                                <label><input type="checkbox" name="reason[]" value="blog">紹介記事</label>
+                                <label><input type="checkbox" name="reason[]" value="sns">SNS口コミ</label>
+                                <label><input type="checkbox" name="reason[]" value="ad">ネット広告</label>
+                                <label><input type="checkbox" name="reason[]" value="other">その他</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>お問い合わせ内容</th>
+                            <td>
+                                <label><input type="radio" name="subject" value="reserve" checked>予約に関して</label>
+                                <label><input type="radio" name="subject" value="menu">メニューに関して</label>
+                                <label><input type="radio" name="subject" value="recruit">求人に関して</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>お問い合わせ</th>
+                            <td><textarea name="contact" id="" cols="36" rows="6"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="送信"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><small>Copyright &copy; 20XX WoodyCafe. All Rights Reserved.</small></p>
+        </footer>
     </body>
 </html>
