@@ -1,1 +1,22 @@
 @charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 2;
+  font-feature-settings: "palt";
+}
+
+.logo {
+  color: gray;
+  font-size: 16px;
+}
