@@ -16,6 +16,24 @@ body {
   font-feature-settings: "palt";
 }
 
+a {
+  text-decoration: none;
+  letter-spacing: .15em;
+}
+
+em {
+  font-style: normal;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+}
+
+/*-------------------------
+  グローバル
+-------------------------*/
+
 .logo {
   color: gray;
   font-size: 16px;
