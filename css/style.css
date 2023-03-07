@@ -37,3 +37,11 @@ th {
 .logo {
   filter: drop-shadow(0 .5px 2px #999);
 }
+
+.gl-footer {
+  height: 120px;
+  background-color: #211;
+  color: #ccc;
+  letter-spacing: .3em;
+  text-align: center;
+}
