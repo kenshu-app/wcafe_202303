@@ -35,6 +35,5 @@ th {
 -------------------------*/
 
 .logo {
-  color: gray;
-  font-size: 16px;
+  filter: drop-shadow(0 .5px 2px #999);
 }
