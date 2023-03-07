@@ -34,14 +34,29 @@ th {
   グローバル
 -------------------------*/
 
+.gl-header {
+  height: 140px;
+  background: url("../images/wood.jpg") 0 0 / contain repeat-x;
+}
+
 .logo {
   filter: drop-shadow(0 .5px 2px #999);
 }
 
 .gl-footer {
   height: 120px;
-  background-color: #211;
+  background: #211 url("../images/grunge.jpg") 0 top repeat-x;
   color: #ccc;
   letter-spacing: .3em;
   text-align: center;
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+
+.top-welcome {
+  height: 640px;
+  background: url("../images/main.jpg") center top / cover no-repeat;
+  box-shadow: inset 0 2px 5px #000;
 }
