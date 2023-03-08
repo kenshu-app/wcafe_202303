@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,6 +48,10 @@ ul {
 table {
   border-collapse: collapse;
   width: 100%;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #fbfbfb;
 }
 
 th,
@@ -105,6 +110,25 @@ th {
   border-bottom: 1px dotted #ccc;
 }
 
+.top-rank a[href$="#other"] {
+  letter-spacing: 0;
+}
+
+.top-rank a[href$="#other"]::after {
+  font-family: FontAwesome;
+  content: "\f18e";
+}
+
+.top-news dd:first-of-type::after {
+  content: 'NEW!';
+  background-color: #900;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px;
+}
+
 .top-side a:hover {
   opacity: .7;
 }
@@ -119,6 +143,23 @@ th {
   box-shadow: 0 0 3px #ccc;
 }
 
+.menu h3::first-line {
+  font-size: 2.4rem;
+}
+
 .menu li {
   border-bottom: 1px dotted #ccc;
+}
+
+/*-------------------------
+  お問い合わせ
+-------------------------*/
+
+.contact td[colspan="2"] {
+  text-align: center;
+}
+
+.contact td[colspan="2"] input[type="submit"] {
+  letter-spacing: 2em;
+  text-indent: 2em;
 }
