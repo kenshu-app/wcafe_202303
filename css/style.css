@@ -21,6 +21,20 @@ a {
   letter-spacing: .15em;
 }
 
+a:link {
+  color: #422;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover,
+a:active {
+  color: #933;
+}
+
 em {
   font-style: normal;
 }
@@ -28,6 +42,16 @@ em {
 ol,
 ul {
   list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
 }
 
 th {
@@ -79,6 +103,10 @@ th {
 .top-time,
 .top-rank {
   border-bottom: 1px dotted #ccc;
+}
+
+.top-side a:hover {
+  opacity: .7;
 }
 
 /*-------------------------
