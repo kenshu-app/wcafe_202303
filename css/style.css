@@ -25,6 +25,11 @@ em {
   font-style: normal;
 }
 
+ol,
+ul {
+  list-style-type: none;
+}
+
 th {
   text-align: left;
   vertical-align: top;
