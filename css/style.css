@@ -70,6 +70,7 @@ th {
 
 .gl-header {
   height: 140px;
+  padding-top: 15px;
   background: linear-gradient(
     110deg,
     #000 0%,
@@ -89,6 +90,8 @@ th {
 
 .gl-footer {
   height: 120px;
+  margin-top: 50px;
+  padding-top: 50px;
   background: #211 url("../images/grunge.jpg") 0 top repeat-x;
   color: #ccc;
   letter-spacing: .3em;
@@ -133,11 +136,17 @@ th {
   opacity: .7;
 }
 
+.twitter {
+  margin-bottom: 20px;
+}
+
 /*-------------------------
   メニュー
 -------------------------*/
 
 .menu {
+  padding: 20px 30px;
+  margin-bottom: 100px;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 0 3px #ccc;
