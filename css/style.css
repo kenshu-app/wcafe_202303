@@ -43,7 +43,7 @@ th {
     rgba(27, 18, 18, .8) 100%
     ),
     url("../images/wood.jpg") 0 0 / contain repeat-x;
-    background-blend-mode: hard-light;
+  background-blend-mode: hard-light;
 }
 
 .logo {
@@ -69,4 +69,23 @@ th {
   height: 640px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #000;
+}
+
+.top-time,
+.top-rank {
+  border-bottom: 1px dotted #ccc;
+}
+
+/*-------------------------
+  メニュー
+-------------------------*/
+
+.menu {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.menu li {
+  border-bottom: 1px dotted #ccc;
 }
