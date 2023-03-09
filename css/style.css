@@ -87,9 +87,14 @@ input[type="checkbox"] {
   グローバル
 -------------------------*/
 
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
 .gl-header {
   height: 140px;
-  padding-top: 50px;
+  padding-top: 15px;
   background: linear-gradient(
     110deg,
     #000 0%,
