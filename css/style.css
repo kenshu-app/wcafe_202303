@@ -173,11 +173,17 @@ input[type="checkbox"] {
   width: 660px;
 }
 
+.top-order {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-time li,
 .top-rank li {
   border-bottom: 1px dotted #ccc;
 }
-.top-time, 
+
+.top-time,
 .top-rank {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -189,10 +195,12 @@ input[type="checkbox"] {
 
 .top-time {
   background: url("../images/time.jpg") -290px 0 no-repeat;
+  order: 2;
 }
 
 .top-rank {
   background: url("../images/rank.jpg") -290px 0 no-repeat;
+  order: 1;
 }
 
 .top-rank a[href$="#other"] {
@@ -203,6 +211,20 @@ input[type="checkbox"] {
   font-family: FontAwesome;
   content: "\f18e";
   margin-left: 5px;
+}
+
+.top-news dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-news dt {
+  width: 18%;
+}
+
+.top-news dd {
+  width: 82%;
+  border-bottom: 2px dotted #ccc;
 }
 
 .top-news dd:first-of-type::after {
@@ -243,6 +265,19 @@ input[type="checkbox"] {
 /*-------------------------
   メニュー
 -------------------------*/
+
+.menus > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.menus > ul li a {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+  border-radius: 3px 3px 0 0;
+}
 
 .menu {
   padding: 20px 30px;
