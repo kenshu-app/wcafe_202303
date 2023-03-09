@@ -43,6 +43,7 @@ em {
 ol,
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 table {
@@ -57,11 +58,29 @@ tr:nth-of-type(odd) {
 th,
 td {
   border: 1px solid #ccc;
+  padding: 20px;
 }
 
 th {
   text-align: left;
   vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+textarea {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 0 30px;
+  background-color: red;
 }
 
 /*-------------------------
@@ -70,7 +89,7 @@ th {
 
 .gl-header {
   height: 140px;
-  padding-top: 15px;
+  padding-top: 50px;
   background: linear-gradient(
     110deg,
     #000 0%,
@@ -120,6 +139,7 @@ th {
 .top-rank a[href$="#other"]::after {
   font-family: FontAwesome;
   content: "\f18e";
+  margin-left: 5px;
 }
 
 .top-news dd:first-of-type::after {
@@ -138,6 +158,19 @@ th {
 
 .twitter {
   margin-bottom: 20px;
+}
+
+/*-------------------------
+  セカンド
+-------------------------*/
+
+.menus > h2,
+.info > h2,
+.movie > h2,
+.map > h2,
+.contact > h2 {
+  margin: 50px 0 20px;
+  border-bottom: 2px dotted #422;
 }
 
 /*-------------------------
