@@ -139,7 +139,7 @@ input[type="checkbox"] {
   text-shadow: 0 0 5px #000;
 }
 
-.gl-nav a:hover {
+.gl-nav li a:hover {
   color: #a86;
 }
 
@@ -159,13 +159,40 @@ input[type="checkbox"] {
 
 .top-welcome {
   height: 640px;
+  margin-bottom: 30px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #000;
 }
 
-.top-time,
-.top-rank {
+.top-parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-main {
+  width: 660px;
+}
+
+.top-time li,
+.top-rank li {
   border-bottom: 1px dotted #ccc;
+}
+.top-time, 
+.top-rank {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+  padding: 20px 30px 20px 400px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.top-time {
+  background: url("../images/time.jpg") -290px 0 no-repeat;
+}
+
+.top-rank {
+  background: url("../images/rank.jpg") -290px 0 no-repeat;
 }
 
 .top-rank a[href$="#other"] {
@@ -186,6 +213,10 @@ input[type="checkbox"] {
   text-align: center;
   border-radius: 3px;
   padding: 3px;
+}
+
+.top-side {
+  width: 300px;
 }
 
 .top-side a:hover {
