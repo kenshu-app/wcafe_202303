@@ -133,7 +133,7 @@ input[type="checkbox"] {
   border-right: 2px solid #000;
 }
 
-.gl-nav a {
+.gl-nav li a {
   display: block;
   color: #ccc;
   text-shadow: 0 0 5px #000;
