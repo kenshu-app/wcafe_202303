@@ -164,6 +164,28 @@ input[type="checkbox"] {
   box-shadow: inset 0 2px 5px #000;
 }
 
+.top-hero {
+  position: relative;
+}
+
+.top-catch {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  padding: 100px 0 0 220px;
+  height: 640px;
+  color: #eee;
+  line-height: 2.4;
+  letter-spacing: .3em;
+  text-shadow: 0 0 50px #422, 0 0 10px #000;
+  background: url("../images/logo2.png") 0 -100px / 90% no-repeat;
+  filter: drop-shadow(0 0 5px #422);
+}
+
+.top-catch h2	{
+  font-size: 4.8rem;
+}
+
 .top-parent {
   display: flex;
   justify-content: space-between;
@@ -282,9 +304,41 @@ input[type="checkbox"] {
 .menu {
   padding: 20px 30px;
   margin-bottom: 100px;
+  position: relative;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 0 3px #ccc;
+}
+
+.menu::after {
+  content: '';
+  display: block;
+  width: 450px;
+  height: 240px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  border-radius: 5px;
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px #333;
+}
+
+.menu:nth-of-type(1)::after {
+  background-image: url("../images/m_morning.jpg");
+}
+.menu:nth-of-type(2)::after {
+  background-image: url("../images/m_lunch.jpg");
+}
+.menu:nth-of-type(3)::after {
+  background-image: url("../images/m_dessert.jpg");
+}
+.menu:nth-of-type(4)::after {
+  background-image: url("../images/m_other.jpg");
+}
+.menu:nth-of-type(5)::after {
+  background-image: url("../images/m_drink.jpg");
 }
 
 .menu h3::first-line {
@@ -293,6 +347,7 @@ input[type="checkbox"] {
 
 .menu li {
   border-bottom: 1px dotted #ccc;
+  margin-bottom: 15px;
 }
 
 /*-------------------------
