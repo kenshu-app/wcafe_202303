@@ -32,6 +32,10 @@ a:visited {
   color: #333;
 }
 
+:hover {
+  transition: .4s ease-in;
+}
+
 a:hover,
 a:active {
   color: #933;
